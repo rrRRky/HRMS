@@ -1,0 +1,394 @@
+﻿@{
+    ViewData["Title"] = "Company Master";
+}
+<div class="row">
+    <div class="col-lg-12 col-xl-12 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-header pt-2 border-bottom">
+                <h5 class="card-title">All Company</h5>
+                <button class="btn btn-sm btn-success" id="saveCompany" type="button" data-toggle="modal" data-target="#companyAdd">Add</button>
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive webTableviewsm">
+                    <table id="myCompanytable" class="display table-bordered table-striped table-hover">
+                        <thead>
+                            <tr id="searchInputs">
+                                <!-- Search inputs will be dynamically added here -->
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="companyAdd" tabindex="-1" role="dialog" aria-labelledby="companyAddLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="companyAddLabel">Add Company</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-1">
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Company Name</label>
+                                <input type="text" class="form-control" name="CompanyName" id="CompanyName" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Street</label>
+                                <input type="text" class="form-control" name="CompanyAddStreet" id="CompanyAddStreet" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Area</label>
+                                <input type="text" class="form-control" name="CompanyAddArea" id="CompanyAddArea" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="row m-0 p-0">
+                                <div class="col-lg-8">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label"> City</label>
+                                        <input type="text" class="form-control" name="CompanyAddCity" id="CompanyAddCity" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label"> ZIP</label>
+                                        <input type="text" class="form-control" name="CompanyAddZIP" id="CompanyAddZIP" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> State</label>
+                                <input type="text" class="form-control" name="CompanyAddState" id="CompanyAddState" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Phone</label>
+                                <input type="text" class="form-control" name="CompanyAddPhone" id="CompanyAddPhone" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Fax</label>
+                                <input type="text" class="form-control" name="CompanyAddFax" id="CompanyAddFax" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Email</label>
+                                <input type="text" class="form-control" name="CompanyAddEmail" id="CompanyAddEmail" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> ID Company Name</label>
+                                <input type="text" class="form-control" name="CompanyIDName" id="CompanyIDName" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Address 1</label>
+                                <input type="text" class="form-control" name="CompanyIDName" id="CompanyIDName" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Address 2</label>
+                                <input type="text" class="form-control" name="CompanyIDName" id="CompanyIDName" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Address 3</label>
+                                <input type="text" class="form-control" name="CompanyIDName" id="CompanyIDName" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="saveCompany" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="companyEdit" tabindex="-1" role="dialog" aria-labelledby="companyEditLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="companyEditLabel">Edit Company</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-1">
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Company Name</label>
+                                <input type="text" class="form-control" name="CompanyName" id="CompanyName" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Street</label>
+                                <input type="text" class="form-control" name="CompanyAddStreet" id="CompanyAddStreet" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Area</label>
+                                <input type="text" class="form-control" name="CompanyAddArea" id="CompanyAddArea" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="row m-0 p-0">
+                                <div class="col-lg-8">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label"> City</label>
+                                        <input type="text" class="form-control" name="CompanyAddCity" id="CompanyAddCity" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label"> ZIP</label>
+                                        <input type="text" class="form-control" name="CompanyAddZIP" id="CompanyAddZIP" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> State</label>
+                                <input type="text" class="form-control" name="CompanyAddState" id="CompanyAddState" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Phone</label>
+                                <input type="text" class="form-control" name="CompanyAddPhone" id="CompanyAddPhone" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Fax</label>
+                                <input type="text" class="form-control" name="CompanyAddFax" id="CompanyAddFax" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Email</label>
+                                <input type="text" class="form-control" name="CompanyAddEmail" id="CompanyAddEmail" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> ID Company Name</label>
+                                <input type="text" class="form-control" name="CompanyIDName" id="CompanyIDName" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Address 1</label>
+                                <input type="text" class="form-control" name="CompanyIDAddone" id="CompanyIDAddone" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Address 2</label>
+                                <input type="text" class="form-control" name="CompanyIDAddtwo" id="CompanyIDAddtwo" />
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Address 3</label>
+                                <input type="text" class="form-control" name="CompanyIDAddthree" id="CompanyIDAddthree" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    // Company Master DataTable Initialization
+    $(document).ready(function () {
+        var CompanydataSet = [
+            ['1', 'RANIKA EXPORTS DESGIN', 'PLOT NO. C-27', 'SECTOR - 8', 'DELHI', '100601', 'DELHI', '0120-1234567', '987456310', '#12-RANIKA EXPORTS DESGIN', 'DELHI', 'SECTOR - 8', '100601'],
+            ['2', 'RANIKA EXPORTS DESGIN PVT LTD', 'PLOT NO. C-28', 'SECTOR - 8', 'DELHI', '100601', 'DELHI', '0120-1234567', '987456310', '#12-RANIKA EXPORTS DESGIN PVT LTD', 'DELHI', 'SECTOR - 8', '100601'],
+            ['3', 'RANIKA EXPORTS DESGIN II', 'C-27', 'SECTOR - 8', 'DELHI', '100601', 'DELHI', '0120-1234567', '987456310', '#12-RANIKA EXPORTS DESGIN II', 'DELHI', 'SECTOR - 8', '100601'],
+            ['4', 'RANIKA EXPORTS DESGIN PVT LTD II', 'C-28', 'SECTOR - 8', 'DELHI', '100601', 'DELHI', '0120-1234567', '987456310', '#12-RANIKA EXPORTS DESGIN PVT LTD II', 'DELHI', 'SECTOR - 8', '100601'],
+        ];
+
+
+        // Initialize DataTable
+        var companytable = $('#myCompanytable').DataTable({
+            data: CompanydataSet,
+            columnDefs: [
+                { orderable: true, className: 'reorder', targets: 0 },
+                { orderable: false, targets: '_all' },
+                { searchable: true, targets: [1, 2] },
+                { searchable: false, targets: '_all' }
+            ],
+            columns: [
+                { title: 'S. No.' },
+                { title: 'Company Name' },
+                { title: 'Street' },
+                { title: 'Area' },
+                { title: 'City' },
+                { title: 'Zip' },
+                { title: 'State' },
+                { title: 'Phone' },
+                { title: 'Fax' },
+                { title: 'ID Company Name' },
+                { title: 'Address 1' },
+                { title: 'Address 2' },
+                { title: 'Address 3' },
+                {
+                    title: 'Action',
+                    data: null,
+                    render: function (data, type, row, meta) {
+                        return `
+                        <div class="dropdown">
+                            <button class="btn btn-link" type="button" data-toggle="dropdown">
+                                <span class="dropdown-dots fs--1"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left border py-0">
+                                <div class="py-2">
+                                    <a class="dropdown-item edit" href="javascript:void(0);" data-toggle="modal" data-target="#companyEdit">Edit</a>
+                                    <a class="dropdown-item inactive text-warning" href="javascript:void(0);">Inactive</a>
+                                    <a class="dropdown-item delete text-danger" href="javascript:void(0);">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    }
+                }
+            ],
+
+            initComplete: function () {
+                let searchRow = $('#searchInputs');
+
+                // Add search inputs and filter icons dynamically based on column definitions
+                this.api().columns().every(function () {
+                    let column = this;
+                    let title = $(column.header()).text();
+                    let columnIndex = column.index();
+
+                    // Create search input element
+                    let input = $('<input>')
+                        .attr('placeholder', 'Search ' + title)
+                        .addClass('form-control form-control-sm');
+
+
+                    // Create a container for both input and filter icon
+                    let container = $('<div>')
+                        .addClass('d-flex')
+                        .append(input);
+
+                    // Append the container to the search row
+                    $(searchRow).append($('<td>').append(container));
+
+                    // Event listener for user input
+                    input.on('keyup', function () {
+                        if (column.search() !== this.value) {
+                            column.search(this.value).draw();
+                        }
+                    });
+                });
+            }
+        });
+
+
+        // Handle the delete action
+        $('#myCompanytable tbody').on('click', 'a.delete', function () {
+            var row = companytable.row($(this).closest('tr')); // Get the row that contains the clicked delete button
+            row.remove().draw(false); // Remove the row and redraw the table
+        });
+
+        // Handle Adding a New Row
+        $('#saveCompany').on('click', function () {
+            var CompanyName = $('#CompanyName').val();
+            var CompanyAddStreet = $('#CompanyAddStreet').val();
+            var CompanyAddArea = $('#CompanyAddArea').val();
+            var CompanyAddCity = $('#CompanyAddCity').val();
+            var CompanyAddZIP = $('#CompanyAddZIP').val();
+            var CompanyAddState = $('#CompanyAddState').val();
+            var CompanyAddPhone = $('#CompanyAddPhone').val();
+            var CompanyAddFax = $('#CompanyAddFax').val();
+            var CompanyAddEmail = $('#CompanyAddEmail').val();
+            var CompanyIDName = $('#CompanyIDName').val();
+            var CompanyIDAddone = $('#CompanyIDAddone').val();
+            var CompanyIDAddtwo = $('#CompanyIDAddtwo').val();
+            var CompanyIDAddthree = $('#CompanyIDAddthree').val();
+
+            // Get the current number of rows in the table to generate the new S. No.
+            var newRowData = [
+                companytable.data().count() + 1, // Incremental S. No.
+                CompanyName,
+                CompanyAddStreet,
+                CompanyAddArea,
+                CompanyAddCity,
+                CompanyAddZIP,
+                CompanyAddState,
+                CompanyAddPhone,
+                CompanyAddFax,
+                CompanyAddEmail,
+                CompanyIDName,
+                CompanyIDAddone,
+                CompanyIDAddtwo,
+                CompanyIDAddthree,
+                "Active" // Default status for new locations
+            ];
+
+            // Add the new row to the table
+            companytable.row.add(newRowData).draw();
+
+            // Hide the modal and clear the input field
+            $('#companyAdd').modal('hide');
+            $('#CompanyName').val('');
+            $('#CompanyAddStreet').val('');
+            $('#CompanyAddArea').val('');
+            $('#CompanyAddCity').val('');
+            $('#CompanyAddZIP').val('');
+            $('#CompanyAddState').val('');
+            $('#CompanyAddPhone').val('');
+            $('#CompanyAddFax').val('');
+            $('#CompanyAddEmail').val('');
+            $('#CompanyIDName').val('');
+            $('#CompanyIDAddone').val('');
+            $('#CompanyIDAddtwo').val('');
+            $('#CompanyIDAddthree').val('');
+        });
+
+    });
+
+
+</script>
+

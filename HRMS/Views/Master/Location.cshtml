@@ -1,0 +1,193 @@
+﻿@{
+    ViewData["Title"] = "Location Master";
+}
+
+<div class="row">
+    <div class="col-lg-12 col-xl-12 col-sm-12 col-12">
+        <div class="card">
+            <div class="card-header pt-2 border-bottom">
+                <h5 class="card-title">All Location</h5>
+                <button class="btn btn-sm btn-success" id="saveLocation" type="button" data-toggle="modal" data-target="#locationAdd">Add</button>
+            </div>
+
+            <div class="card-body">
+                <div class="table-responsive webTableviewsm">
+                    <table id="myLocationtable" class="display table-bordered table-striped table-hover">
+                        <thead>
+                            <tr id="searchInputs">
+                                <!-- Search inputs will be dynamically added here -->
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="locationAdd" tabindex="-1" role="dialog" aria-labelledby="locationAddLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="locationAddLabel">Add Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-1">
+                        <div class="col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Location Name</label>
+                                <input type="text" class="form-control" name="locationName" id="locationName" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="saveLocation" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="locationEdit" tabindex="-1" role="dialog" aria-labelledby="locationEditLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="locationEditLabel">Edit Location</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-1">
+                        <div class="col-12">
+                            <div class="form-group mb-3">
+                                <label class="form-label"> Location Name</label>
+                                <input type="text" class="form-control" name="locationName" id="locationName" value="Location Name" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    // Location Master DataTable Initialization
+    $(document).ready(function () {
+        var LocationdataSet = [
+            ['1', 'System Architect', 'Active'],
+            ['2', 'Accountant', 'InActive'],
+            ['3', 'Junior Technical Author', 'Active'],
+            ['4', 'Senior Javascript Developer', 'InActive'],
+        ];
+
+        // Initialize DataTable
+        var locationtable = $('#myLocationtable').DataTable({
+            data: LocationdataSet,
+            columnDefs: [
+                { orderable: true, className: 'reorder', targets: 0 },
+                { orderable: false, targets: '_all' },
+                { searchable: true, targets: [1] },
+                { searchable: false, targets: '_all' }
+            ],
+            columns: [
+                { title: 'S. No.' },
+                { title: 'Name' },
+                { title: 'Status' },
+                {
+                    title: 'Action',
+                    data: null,
+                    render: function (data, type, row, meta) {
+                        return `
+                        <div class="dropdown">
+                            <button class="btn btn-link" type="button" data-toggle="dropdown">
+                                <span class="dropdown-dots fs--1"></span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-left border py-0">
+                                <div class="py-2">
+                                    <a class="dropdown-item edit" href="javascript:void(0);" data-toggle="modal" data-target="#locationEdit">Edit</a>
+                                    <a class="dropdown-item inactive text-warning" href="javascript:void(0);">Inactive</a>
+                                    <a class="dropdown-item delete text-danger" href="javascript:void(0);">Delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    }
+                }
+            ],
+
+            initComplete: function () {
+                let searchRow = $('#searchInputs');
+
+                // Add search inputs and filter icons dynamically based on column definitions
+                this.api().columns().every(function () {
+                    let column = this;
+                    let title = $(column.header()).text();
+                    let columnIndex = column.index();
+
+                    // Create search input element
+                    let input = $('<input>')
+                        .attr('placeholder', 'Search ' + title)
+                        .addClass('form-control form-control-sm');
+
+
+                    // Create a container for both input and filter icon
+                    let container = $('<div>')
+                        .addClass('d-flex')
+                        .append(input);
+
+                    // Append the container to the search row
+                    $(searchRow).append($('<td>').append(container));
+
+                    // Event listener for user input
+                    input.on('keyup', function () {
+                        if (column.search() !== this.value) {
+                            column.search(this.value).draw();
+                        }
+                    });
+                });
+            }
+        });
+
+        // Handle the delete action
+        $('#myLocationtable tbody').on('click', 'a.delete', function () {
+            var row = locationtable.row($(this).closest('tr')); // Get the row that contains the clicked delete button
+            row.remove().draw(false); // Remove the row and redraw the table
+        });
+
+        // Handle Adding a New Row
+        $('#saveLocation').on('click', function () {
+            var locationName = $('#locationName').val();
+
+            // Get the current number of rows in the table to generate the new S. No.
+            var newRowData = [
+                locationtable.data().count() + 1, // Incremental S. No.
+                locationName, // Location Name from input
+                "Active" // Default status for new locations
+            ];
+
+            // Add the new row to the table
+            locationtable.row.add(newRowData).draw();
+
+            // Hide the modal and clear the input field
+            $('#locationAdd').modal('hide');
+            $('#locationName').val('');
+        });
+
+    });
+
+
+</script>

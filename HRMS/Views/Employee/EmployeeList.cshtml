@@ -1,0 +1,2321 @@
+﻿@{
+    ViewData["Title"] = "Employee List";
+}
+
+<div class="row m-0 p-0">
+    <div class="col-lg-12 col-xl-12 col-sm-12 col-12">
+        <div class="profile-tab">
+            <div class="custom-tab-1">
+                <ul class="nav nav-tabs" id="dynamic-tabs">
+                    <li class="nav-item">
+                        <a href="#tab-1" data-toggle="tab" class="nav-link active">Employee Detail</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab-2" data-toggle="tab" class="nav-link ">Add Employee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab-3" data-toggle="tab" class="nav-link ">Employee List</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="dynamic-tab-content">
+                    <div id="tab-1" class="tab-pane fade active show">
+                        <div class="row m-0 mt-1 p-0">
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Employee Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#employeeInfoModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Post Applied For</h3>
+                                                    <p>Teacher</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Paycode</h3>
+                                                    <p>#12345</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Finger ID</h3>
+                                                    <p>T123#</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Designation</h3>
+                                                    <p>Teacher</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Department</h3>
+                                                    <p>Education</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Category</h3>
+                                                    <p>Senior</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Grade</h3>
+                                                    <p>A+</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Company</h3>
+                                                    <p>Abc pvt ltd</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Personal Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#personalInfoModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Name</h3>
+                                                    <p>Rakesh Yadav</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Father Name</h3>
+                                                    <p>Mr. Father Name</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Date of Birth</h3>
+                                                    <p>27-Sept-1994 <span>29</span></p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Designation</h3>
+                                                    <p>Teacher</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Sex</h3>
+                                                    <p>Male</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Martial Status</h3>
+                                                    <p>Not Marriaged</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Nationality</h3>
+                                                    <p>Indian</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Religion / Caste</h3>
+                                                    <p>Hindu / Yadav</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Address Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#addressModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3 class="w-100 border border-top-0 border-left-0 border-right-0 border-bottom">Present Address</h3>
+                                                    <p class="font-weight-normal mb-1">Address one here</p>
+                                                    <p class="font-weight-normal mb-1">Address Two here</p>
+                                                    <p class="font-weight-normal mb-1">Address Three here</p>
+                                                    <p class="font-weight-normal mb-1">Village, P.O, Thana</p>
+                                                    <p class="font-weight-normal mb-1">Sub Division , District , State</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3 class="w-100 border border-top-0 border-left-0 border-right-0 border-bottom">Permanent Address</h3>
+                                                    <p class="font-weight-normal mb-1">Address one here</p>
+                                                    <p class="font-weight-normal mb-1">Address Two here</p>
+                                                    <p class="font-weight-normal mb-1">Address Three here</p>
+                                                    <p class="font-weight-normal mb-1">Village, P.O, Thana</p>
+                                                    <p class="font-weight-normal mb-1">Sub Division , District , State</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Experience Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#experienceModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-4 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Qualification</h3>
+                                                    <p>Master of Computer Application</p>
+                                                </div>
+                                                <div class="infoBox">
+                                                    <h3>Technical Qualification</h3>
+                                                    <p>HTML, CSS, JAVASCRIPT, BOOTSTRAP, React.js</p>
+                                                </div>
+                                                <div class="infoBox">
+                                                    <h3>Language Known</h3>
+                                                    <p><span class="btn btn-sm btn-light">English</span> <span class="btn btn-sm btn-light">Hindi</span></p>
+                                                </div>
+                                                <div class="infoBox">
+                                                    <h3>Total Experiences</h3>
+                                                    <p>5 years</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-8 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Employer Detail</h3>
+                                                    <table class="table table-bordered table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Name</th>
+                                                                <th>Designation</th>
+                                                                <th>Period</th>
+                                                                <th>Reason</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>Maxtra Technologies</td>
+                                                                <td>UI UX Developer</td>
+                                                                <td>16-Jan-2021 - 15-Jan-2023 </td>
+                                                                <td>For growth</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Maxtra Technologies</td>
+                                                                <td>UI UX Developer</td>
+                                                                <td>16-Jan-2021 - 15-Jan-2023 </td>
+                                                                <td>For growth</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Maxtra Technologies</td>
+                                                                <td>UI UX Developer</td>
+                                                                <td>16-Jan-2021 - 15-Jan-2023 </td>
+                                                                <td>For growth</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Maxtra Technologies</td>
+                                                                <td>UI UX Developer</td>
+                                                                <td>16-Jan-2021 - 15-Jan-2023 </td>
+                                                                <td>For growth</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Family Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#familyInfoModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-12 col-12">
+                                                <div class="infoBox">
+                                                    <table class="table table-bordered table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>S. No.</th>
+                                                                <th>Name</th>
+                                                                <th>Year of Birth</th>
+                                                                <th>Relation</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>abc</td>
+                                                                <td>15-Jan-2023 </td>
+                                                                <td>Father</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>def</td>
+                                                                <td>15-Jan-2023 </td>
+                                                                <td>Mother</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>uvw</td>
+                                                                <td>15-Jan-2023 </td>
+                                                                <td>Sister</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>xyz</td>
+                                                                <td>15-Jan-2023 </td>
+                                                                <td>Sister</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Do You Any Relation Currently Working in thin company Unit</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Name</h3>
+                                                    <p>T123#</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Relationship</h3>
+                                                    <p>Teacher</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom">
+                                                <div class="infoBox">
+                                                    <p>Name and Address of two Responsible Person</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Name of First person</h3>
+                                                    <p>Address of First person</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Name of Second person</h3>
+                                                    <p>Address of Second person</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Date</h3>
+                                                    <p>14-Aug-2024</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Place</h3>
+                                                    <p>Greater Noida</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Statutory Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#statutoryModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                                                <div class="infoBox">
+                                                    <h3>Form 1 ESI</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>ESI Insurance No.</h3>
+                                                    <p>314353647</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>ESI Employer Code</h3>
+                                                    <p>2132435465</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Local Office</h3>
+                                                    <p>plot #2, SIte 4, Greater Noida, 201310</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>ESI Nominee for Payment</h3>
+                                                    <p>20000</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Particular of Fmily</h3>
+                                                    <p>Mother</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Family member residing with insured person</h3>
+                                                    <p>fsdfsdf dsdffd</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                                                <div class="infoBox">
+                                                    <h3>Form 2 PF</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>PF Account No.</h3>
+                                                    <p>314353647</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Nominee/Nominees</h3>
+                                                    <p>asd,safsd</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Share percentage (%) of Nominee</h3>
+                                                    <p>50</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Children Pension</h3>
+                                                    <p>2132435465</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Widow Pension</h3>
+                                                    <p>314353647</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                                                <div class="infoBox">
+                                                    <p>Form F Gratuity</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Nominee's for Gratuity'</h3>
+                                                    <p>2</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Share percentage (%) of Nominee</h3>
+                                                    <p>100</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Payroll Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#payrollInfoModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Transport Facility</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Route No.</h3>
+                                                    <p>#5</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12">
+                                                <div class="infoBox">
+                                                    <table class="table table-bordered table-hover">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Basic</th>
+                                                                <th>HRA</th>
+                                                                <th>CONV</th>
+                                                                <th>OTHER</th>
+                                                                <th>EARN.5</th>
+                                                                <th>WCONV</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>50000</td>
+                                                                <td>20000</td>
+                                                                <td>5000 </td>
+                                                                <td>8000</td>
+                                                                <td>2000 </td>
+                                                                <td>1000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Employee Type</h3>
+                                                    <p>Permanent</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Wages Calcuation</h3>
+                                                    <p>Monthly</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Payment Type</h3>
+                                                    <p>Cash</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Overtime</h3>
+                                                    <p>Enable</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Rate</h3>
+                                                    <p>500</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Remark</h3>
+                                                    <p>Well we can see the remark here, which is given by the admin department</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <div class="card">
+                                    <div class="card-header py-1">
+                                        <span class="h5">Interview Information</span>
+                                        <a href="#" class="btn btn-iconbtn-sm" data-toggle="modal" data-target="#interviewModal">
+                                            <i class="fa fa-pencil"></i>
+                                        </a>
+                                    </div>
+                                    <div class="card-body py-0">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Interview Date</h3>
+                                                    <p>12- Aug-2023</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Interview By</h3>
+                                                    <p>Mr. Name</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Date of Joining</h3>
+                                                    <p>27-Sept-2024 </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Salary</h3>
+                                                    <p>125000</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Confirm Date</h3>
+                                                    <p>16-Aug-2024</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Individual Boi-Data</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Photo</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-12">
+                                                <div class="infoBox">
+                                                    <h3>No. of Photo</h3>
+                                                    <p>5</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Application for Employment</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Proof of Age</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Proof Name</h3>
+                                                    <p>afef arafa rff  af afaf</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Certificates/Testimonials</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Contract of Employment</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Joining Report</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-12">
+                                                <div class="infoBox">
+                                                    <h3>Nomination Form</h3>
+                                                    <p>Yes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade">
+                        <div class="custom-tab-1">
+                            <div class="myrow">
+                                <ul class="nav nav-tabs" id="dynamic-tabs-child">
+                                    <li class="nav-item">
+                                        <a href="#tab-child-1" data-toggle="tab" class="nav-link active">Personal Information</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#tab-child-2" data-toggle="tab" class="nav-link ">Address Information</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#tab-child-3" data-toggle="tab" class="nav-link ">Employee Information</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#tab-child-4" data-toggle="tab" class="nav-link ">Other Information</a>
+                                    </li>
+                                </ul>
+                                <div class="button-group">
+                                    <button class="btn btn-sm btn-secondary" type="reset">Reset</button>
+                                    <button class="btn btn-sm btn-success" type="submit">Save</button>
+                                </div>
+                            </div>
+                            <div class="tab-content" id="dynamic-tab-content-child">
+                                <div id="tab-child-1" class="tab-pane fade active show">
+                                    <div class="card">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-12 col-12">
+                                                <div class="card-header">
+                                                    <h5 class="card-title">Personal Information</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <div class="row m-0 p-0">
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="name" class="form-label">Name (In Capital Letter)</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="name">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="fatherHusbandName" class="form-label">Father/Husband Name</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="fatherHusbandName">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="dob" class="form-label">Date of Birth</label>
+                                                                        <input type="date" class="form-control form-control-sm" id="dob">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-1 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="age" class="form-label">Age</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="age" readonly>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-2 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="sex" class="form-label">Sex</label>
+                                                                        <select class="form-select form-select-sm form-control form-control-sm" id="sex">
+                                                                            <option selected>Select Sex</option>
+                                                                            <!-- Add options here -->
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="maritalStatus" class="form-label">Marital Status</label>
+                                                                        <select class="form-select form-select-sm form-control form-control-sm" id="maritalStatus">
+                                                                            <option selected>Select Marital Status</option>
+                                                                            <!-- Add options here -->
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="nationality" class="form-label">Nationality</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="nationality">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="religion" class="form-label">Religion</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="religion">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="caste" class="form-label">Caste</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="caste">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12 col-12">
+                                                <div class="card-header">
+                                                    <h5 class="card-title">Family Details</h5>
+                                                </div>
+                                                <div class="card-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <div class="row m-0 p-0">
+                                                                <div class="col-lg-12 col-sm-12 col-12">
+                                                                    <div class="mb-3">
+                                                                        <table class="table table-bordered table-hover" id="familyTable">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th>S. No.</th>
+                                                                                    <th>Name</th>
+                                                                                    <th>Year of Birth</th>
+                                                                                    <th>Relation</th>
+                                                                                    <th>Action</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td>1</td>
+                                                                                    <td><input type="text" class="form-control form-control-sm" id="familyName[]"></td>
+                                                                                    <td><input type="date" class="form-control form-control-sm" id="familyDOB[]"></td>
+                                                                                    <td><input type="text" class="form-control form-control-sm" id="familyRelation[]"></td>
+                                                                                    <td><button type="button" class="btn btn-danger remove-row">Remove</button></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                        <button type="button" class="btn btn-primary" id="addRow">Add Family Member</button>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="curretlyFamily" class="form-label">Do You Have Any Relation Currently Working in This Company Unit?</label>
+                                                                        <p>
+                                                                            <label><input type="radio" id="relationWorking" value="Yes"> Yes</label>
+                                                                            <label><input type="radio" id="relationWorking" value="No"> No</label>
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="relationName" class="form-label">Name</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="relationName">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="relationType" class="form-label">Relationship</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="relationType">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-12 col-sm-12 col-12">
+                                                                    <p>Name and Address of Two Responsible Persons</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="firstPersonName" class="form-label">Name of First Person</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="firstPersonName">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="secondPersonName" class="form-label">Name of Second Person</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="secondPersonName">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="religion" class="form-label">Address of First Person</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="firstPersonAddress">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-3 col-sm-4 col-6">
+                                                                    <div class="mb-3">
+                                                                        <label for="caste" class="form-label">Address of Second Person</label>
+                                                                        <input type="text" class="form-control form-control-sm" id="secondPersonAddress">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-child-2" class="tab-pane fade">
+                                    <div class="col-lg-12 col-12">
+                                        <div class="card-header">
+                                            <h5 class="card-title">Address Details</h5>
+                                        </div>
+                                        <div class="card-body px-1">
+                                            <form>
+                                                <div class="form-group">
+                                                    <div class="row m-0 p-0">
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="card">
+                                                                <div class="card-header">
+                                                                    <div class="card-title">Current Address</div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row m-0 p-0">
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentAddress1">Address Line 1</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentAddress1" placeholder="Address Line 1">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentAddress2">Address Line 2</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentAddress2" placeholder="Address Line 2">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentAddress3">Address Line 3</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentAddress3" placeholder="Address Line 3">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentVillage">Village</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentVillage" placeholder="Village">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentPO">P.O.</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentPO" placeholder="Post Office">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentThana">Thana</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentThana" placeholder="Thana">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentSubDivision">Sub Division</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentSubDivision" placeholder="Sub Division">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentDistrict">District</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentDistrict" placeholder="District">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="presentState">State</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="presentState" placeholder="State">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="card">
+                                                                <div class="card-header">
+                                                                    <div class="card-title">Current Address</div>
+                                                                    <div class="info-address">
+                                                                        <input type="checkbox" class="form-check-input" id="copyAddressCheckbox">
+                                                                        <label class="form-check-label" for="copyAddressCheckbox">Same as Present Address</label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="card-body">
+                                                                    <div class="row m-0 p-0">
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentAddress1">Address Line 1</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentAddress1" placeholder="Address Line 1">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentAddress2">Address Line 2</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentAddress2" placeholder="Address Line 2">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentAddress3">Address Line 3</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentAddress3" placeholder="Address Line 3">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentVillage">Village</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentVillage" placeholder="Village">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentPO">P.O.</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentPO" placeholder="Post Office">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentThana">Thana</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentThana" placeholder="Thana">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentSubDivision">Sub Division</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentSubDivision" placeholder="Sub Division">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentDistrict">District</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentDistrict" placeholder="District">
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-lg-4 col-sm-6 col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="permanentState">State</label>
+                                                                                <input type="text" class="form-control form-control-sm" id="permanentState" placeholder="State">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-child-3" class="tab-pane fade">
+                                    <div class="card">
+                                        <div class="card-body py-0">
+                                            <form>
+                                                <div class="row m-0 p-0">
+                                                    <div class="col-lg-3 col-sm-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="qualification" class="form-label">Qualification</label>
+                                                            <input type="text" class="form-control form-control-sm" id="qualification" placeholder="Master of Computer Application">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="technicalQualification" class="form-label">Technical Qualification</label>
+                                                            <input type="text" class="form-control form-control-sm" id="technicalQualification" placeholder="HTML, CSS, JAVASCRIPT, BOOTSTRAP, React.js">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="languageKnown" class="form-label">Language Known</label>
+                                                            <input type="text" class="form-control form-control-sm" id="languageKnown" placeholder="English, Hindi">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="totalExperience" class="form-label">Total Experience</label>
+                                                            <input type="text" class="form-control form-control-sm" id="totalExperience" placeholder="5 years">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="employerDetail" class="form-label">Employer Detail</label>
+                                                            <table class="table table-bordered table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Name</th>
+                                                                        <th>Designation</th>
+                                                                        <th>Period</th>
+                                                                        <th>Reason</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="employerName[]" value="Maxtra Technologies"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="designation[]" value="UI UX Developer"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="period[]" value="16-Jan-2021 - 15-Jan-2023"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="reason[]" value="For growth"></td>
+                                                                    </tr>
+                                                                    <!-- Add more rows as needed -->
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="transportFacility" class="form-label">Transport Facility</label>
+                                                            <input type="text" class="form-control form-control-sm" id="transportFacility" placeholder="Yes">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-6 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="routeNo" class="form-label">Route No.</label>
+                                                            <input type="text" class="form-control form-control-sm" id="routeNo" placeholder="#5">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="salaryDetails" class="form-label">Salary Details</label>
+                                                            <table class="table table-bordered table-hover">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Basic</th>
+                                                                        <th>HRA</th>
+                                                                        <th>CONV</th>
+                                                                        <th>OTHER</th>
+                                                                        <th>EARN.5</th>
+                                                                        <th>WCONV</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="basicSalary" value="50000"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="hra" value="20000"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="conv" value="5000"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="other" value="8000"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="earn5" value="2000"></td>
+                                                                        <td><input type="text" class="form-control form-control-sm" id="wconv" value="1000"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-4 col-6">
+                                                        <div class="mb-3">
+                                                            <label for="employeeType" class="form-label">Employee Type</label>
+                                                            <select class="form-select form-select-sm form-control form-control-sm" id="employeeType">
+                                                                <option selected>Select Employee Type</option>
+                                                                <!-- Add options here -->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-4 col-6">
+                                                        <div class="mb-3">
+                                                            <label for="wagesCalculation" class="form-label">Wages Calculation</label>
+                                                            <select class="form-select form-select-sm form-control form-control-sm" id="wagesCalculation">
+                                                                <option selected>Select Wages Calculation</option>
+                                                                <!-- Add options here -->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-3 col-sm-4 col-6">
+                                                        <div class="mb-3">
+                                                            <label for="paymentType" class="form-label">Payment Type</label>
+                                                            <select class="form-select form-select-sm form-control form-control-sm" id="paymentType">
+                                                                <option selected>Select Payment Type</option>
+                                                                <!-- Add options here -->
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-2 col-sm-2 col-3">
+                                                        <div class="mb-3">
+                                                            <label for="overtime" class="form-label">Overtime</label>
+                                                            <input type="text" class="form-control form-control-sm" id="overtime" placeholder="Enable">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-1 col-sm-2 col-3">
+                                                        <div class="mb-3">
+                                                            <label for="rate" class="form-label">Rate</label>
+                                                            <input type="text" class="form-control form-control-sm" id="rate" placeholder="500">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-12">
+                                                        <div class="mb-3">
+                                                            <label for="remark" class="form-label">Remark</label>
+                                                            <textarea class="form-control form-control-sm" id="remark" placeholder="Well we can see the remark here, which is given by the admin department"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab-child-4" class="tab-pane fade">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="row m-0 p-0 d-flex flex-column">
+                                                    <div class="card">
+                                                        <div class="card-header p-2">
+                                                            <h4 class="card-title">Form 1 ESI</h4>
+                                                            <input type="checkbox"  id="form1ESI" checked>
+                                                        </div>
+                                                        <div class="card-body row p-2 m-0">
+                                                            <!-- ESI Information -->
+                                                            @*<div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                                                                <div class="mb-3">
+                                                                    <label for="form1ESI" class="form-label">Form 1 ESI</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="form1ESI" placeholder="Yes">
+                                                                </div>
+                                                            </div>*@
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="esiInsuranceNo" class="form-label">ESI Insurance No.</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="esiInsuranceNo" placeholder="314353647">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="esiEmployerCode" class="form-label">ESI Employer Code</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="esiEmployerCode" placeholder="2132435465">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="localOffice" class="form-label">Local Office</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="localOffice" placeholder="Plot #2, Site 4, Greater Noida, 201310">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="esiNomineePayment" class="form-label">ESI Nominee for Payment</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="esiNomineePayment" placeholder="20000">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="familyParticular" class="form-label">Particular of Family</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="familyParticular" placeholder="Mother">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="familyMemberResiding" class="form-label">Family Member Residing with Insured Person</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="familyMemberResiding" placeholder="fsdfsdf dsdffd">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="card">
+                                                        <div class="card-header p-2">
+                                                            <h4 class="card-title">Form 2 PF</h4>
+                                                            <input type="checkbox"  id="form2PF" checked>
+                                                        </div>
+                                                        <div class="card-body row p-2 m-0">
+                                                            <!-- PF Information -->
+                                                            @*<div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                                                                <div class="mb-3">
+                                                                    <label for="form2PF" class="form-label">Form 2 PF</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="form2PF" placeholder="Yes">
+                                                                </div>
+                                                            </div>*@
+                                                            <div class="col-lg-4 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="pfAccountNo" class="form-label">PF Account No.</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="pfAccountNo" placeholder="314353647">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-8 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="pfNominee" class="form-label">Nominee/Nominees</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="pfNominee" placeholder="asd,safsd">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="nomineeSharePercentage" class="form-label">Share Percentage (%) of Nominee</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="nomineeSharePercentage" placeholder="50">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="childrenPension" class="form-label">Children Pension</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="childrenPension" placeholder="2132435465">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="widowPension" class="form-label">Widow Pension</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="widowPension" placeholder="314353647">
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="card">
+                                                        <div class="card-header p-2">
+                                                            <h4 class="card-title">Form F Gratuity</h4>
+                                                            <input type="checkbox"  id="formFGratuity" checked>
+                                                        </div>
+                                                        <div class="card-body row p-2 m-0">
+                                                            <!-- Gratuity Information -->
+                                                            @*<div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                                                                <div class="mb-3">
+                                                                    <label for="formFGratuity" class="form-label">Form F Gratuity</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="formFGratuity" placeholder="Yes">
+                                                                </div>
+                                                            </div>*@
+                                                            <div class="col-lg-4 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="gratuityNominee" class="form-label">Nominee's for Gratuity</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="gratuityNominee" placeholder="2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-4 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="gratuitySharePercentage" class="form-label">Share Percentage (%) of Nominee</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="gratuitySharePercentage" placeholder="100">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <div class="row m-0 p-0">
+                                                            <!-- Interview Details -->
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="interviewDate" class="form-label">Interview Date</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="interviewDate" placeholder="12-Aug-2023">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="interviewBy" class="form-label">Interview By</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="interviewBy" placeholder="Mr. Name">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Employment Details -->
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="dateOfJoining" class="form-label">Date of Joining</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="dateOfJoining" placeholder="27-Sept-2024">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="salary" class="form-label">Salary</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="salary" placeholder="125000">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="confirmDate" class="form-label">Confirm Date</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="confirmDate" placeholder="16-Aug-2024">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="individualBioData" class="form-label">Individual Bio-Data</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="individualBioData" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="photo" class="form-label">Photo</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="photo" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-3 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="noOfPhoto" class="form-label">No. of Photos</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="noOfPhoto" placeholder="5">
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- Documents and Proofs -->
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="employmentApplication" class="form-label">Application for Employment</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="employmentApplication" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="proofOfAge" class="form-label">Proof of Age</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="proofOfAge" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="proofName" class="form-label">Proof Name</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="proofName" placeholder="afef arafa rff af afaf">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="certificatesTestimonials" class="form-label">Certificates/Testimonials</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="certificatesTestimonials" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="contractOfEmployment" class="form-label">Contract of Employment</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="contractOfEmployment" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="joiningReport" class="form-label">Joining Report</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="joiningReport" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 col-12">
+                                                                <div class="mb-3">
+                                                                    <label for="nominationForm" class="form-label">Nomination Form</label>
+                                                                    <input type="text" class="form-control form-control-sm" id="nominationForm" placeholder="Yes">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('copyAddressCheckbox').addEventListener('change', function () {
+        if (this.checked) {
+            document.getElementById('permanentAddress1').value = document.getElementById('presentAddress1').value;
+            document.getElementById('permanentAddress2').value = document.getElementById('presentAddress2').value;
+            document.getElementById('permanentAddress3').value = document.getElementById('presentAddress3').value;
+            document.getElementById('permanentVillage').value = document.getElementById('presentVillage').value;
+            document.getElementById('permanentPO').value = document.getElementById('presentPO').value;
+            document.getElementById('permanentThana').value = document.getElementById('presentThana').value;
+            document.getElementById('permanentSubDivision').value = document.getElementById('presentSubDivision').value;
+            document.getElementById('permanentDistrict').value = document.getElementById('presentDistrict').value;
+            document.getElementById('permanentState').value = document.getElementById('presentState').value;
+        } else {
+            document.getElementById('permanentAddress1').value = '';
+            document.getElementById('permanentAddress2').value = '';
+            document.getElementById('permanentAddress3').value = '';
+            document.getElementById('permanentVillage').value = '';
+            document.getElementById('permanentPO').value = '';
+            document.getElementById('permanentThana').value = '';
+            document.getElementById('permanentSubDivision').value = '';
+            document.getElementById('permanentDistrict').value = '';
+            document.getElementById('permanentState').value = '';
+        }
+    });
+
+
+    document.getElementById('addRow').addEventListener('click', function () {
+        let table = document.getElementById('familyTable').getElementsByTagName('tbody')[0];
+        let rowCount = table.rows.length;
+        let row = table.insertRow(rowCount);
+
+        let cell1 = row.insertCell(0);
+        let cell2 = row.insertCell(1);
+        let cell3 = row.insertCell(2);
+        let cell4 = row.insertCell(3);
+        let cell5 = row.insertCell(4);
+
+        cell1.innerHTML = rowCount + 1;
+        cell2.innerHTML = '<input type="text" class="form-control form-control-sm" id="familyName[]">';
+        cell3.innerHTML = '<input type="date" class="form-control form-control-sm" id="familyDOB[]">';
+        cell4.innerHTML = '<input type="text" class="form-control form-control-sm" id="familyRelation[]">';
+        cell5.innerHTML = '<button type="button" class="btn btn-danger remove-row">Remove</button>';
+
+        document.querySelectorAll('.remove-row').forEach(function (button) {
+            button.addEventListener('click', function () {
+                this.closest('tr').remove();
+            });
+        });
+    });
+
+    document.querySelectorAll('.remove-row').forEach(function (button) {
+        button.addEventListener('click', function () {
+            this.closest('tr').remove();
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const dobInput = document.querySelector('#dob');
+        const ageInput = document.querySelector('#age');
+
+        if (dobInput && ageInput) {
+            dobInput.addEventListener('change', function () {
+                const dob = new Date(dobInput.value);
+                const age = new Date().getFullYear() - dob.getFullYear();
+                ageInput.value = age;
+            });
+        }
+
+        const sameAsPresentCheckbox = document.querySelector('#sameAsPresent');
+        if (sameAsPresentCheckbox) {
+            sameAsPresentCheckbox.addEventListener('change', function () {
+                const presentAddressInputs = document.querySelectorAll('.present-address input');
+                const permanentAddressInputs = document.querySelectorAll('.permanent-address input');
+
+                if (this.checked) {
+                    presentAddressInputs.forEach((input, index) => {
+                        permanentAddressInputs[index].value = input.value;
+                    });
+                } else {
+                    permanentAddressInputs.forEach(input => {
+                        input.value = '';
+                    });
+                }
+            });
+        }
+    });
+
+</script>
+
+<!-- Modals -->
+<!-- Employee Information Modal -->
+<div class="modal fade" id="employeeInfoModal" tabindex="-1" aria-labelledby="employeeInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="employeeInfoModalLabel">Edit Employee</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-0">
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="postAppliedFor" class="form-label">Post Applied for</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="postAppliedFor">
+                                    <option selected>Select Post</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="paycode" class="form-label">Paycode</label>
+                                <input type="text" class="form-control form-control-sm" id="paycode">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="fingerId" class="form-label">Finger Id</label>
+                                <input type="text" class="form-control form-control-sm" id="fingerId">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="designation" class="form-label">Designation</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="designation">
+                                    <option selected>Select Designation</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="department" class="form-label">Department</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="department">
+                                    <option selected>Select Department</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="category" class="form-label">Category</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="category">
+                                    <option selected>Select Category</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="grade" class="form-label">Grade</label>
+                                <input type="text" class="form-control form-control-sm" id="grade">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="company" class="form-label">Company</label>
+                                <input type="text" class="form-control form-control-sm" id="company">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Personal Information Modal -->
+<div class="modal fade" id="personalInfoModal" tabindex="-1" aria-labelledby="personalInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="personalInfoModalLabel">Edit Personal Information</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="row m-0 p-0">
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name (In Capital Letter)</label>
+                                    <input type="text" class="form-control form-control-sm" id="name">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="fatherHusbandName" class="form-label">Father/Husband Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="fatherHusbandName">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control form-control-sm" id="dob">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="age" class="form-label">Age</label>
+                                    <input type="text" class="form-control form-control-sm" id="age" readonly>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="sex" class="form-label">Sex</label>
+                                    <select class="form-select form-select-sm form-control form-control-sm" id="sex">
+                                        <option selected>Select Sex</option>
+                                        <!-- Add options here -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="maritalStatus" class="form-label">Marital Status</label>
+                                    <select class="form-select form-select-sm form-control form-control-sm" id="maritalStatus">
+                                        <option selected>Select Marital Status</option>
+                                        <!-- Add options here -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="nationality" class="form-label">Nationality</label>
+                                    <input type="text" class="form-control form-control-sm" id="nationality">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="religion" class="form-label">Religion</label>
+                                    <input type="text" class="form-control form-control-sm" id="religion">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="caste" class="form-label">Caste</label>
+                                    <input type="text" class="form-control form-control-sm" id="caste">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Address Modal -->
+<div class="modal fade" id="addressModal" tabindex="-1" aria-labelledby="addressModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addressModalLabel">Edit Address</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <form>
+                    <div class="form-group">
+                        <div class="row m-0 p-0">
+                            <div class="col-lg-12 col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">Current Address</div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentAddress1">Address Line 1</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentAddress1" placeholder="Address Line 1">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentAddress2">Address Line 2</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentAddress2" placeholder="Address Line 2">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentAddress3">Address Line 3</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentAddress3" placeholder="Address Line 3">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentVillage">Village</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentVillage" placeholder="Village">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentPO">P.O.</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentPO" placeholder="Post Office">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentThana">Thana</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentThana" placeholder="Thana">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentSubDivision">Sub Division</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentSubDivision" placeholder="Sub Division">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentDistrict">District</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentDistrict" placeholder="District">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="presentState">State</label>
+                                                    <input type="text" class="form-control form-control-sm" id="presentState" placeholder="State">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <div class="card-title">Current Address</div>
+                                        <div class="info-address">
+                                            <input type="checkbox" class="form-check-input" id="copyAddressCheckbox">
+                                            <label class="form-check-label" for="copyAddressCheckbox">Same as Present Address</label>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row m-0 p-0">
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentAddress1">Address Line 1</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentAddress1" placeholder="Address Line 1">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentAddress2">Address Line 2</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentAddress2" placeholder="Address Line 2">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentAddress3">Address Line 3</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentAddress3" placeholder="Address Line 3">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentVillage">Village</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentVillage" placeholder="Village">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentPO">P.O.</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentPO" placeholder="Post Office">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentThana">Thana</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentThana" placeholder="Thana">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentSubDivision">Sub Division</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentSubDivision" placeholder="Sub Division">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentDistrict">District</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentDistrict" placeholder="District">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 col-12">
+                                                <div class="mb-3">
+                                                    <label for="permanentState">State</label>
+                                                    <input type="text" class="form-control form-control-sm" id="permanentState" placeholder="State">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Experience Modal -->
+<div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="experienceModalLabel">Edit Experience Detail</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-0">
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="qualification" class="form-label">Qualification</label>
+                                <input type="text" class="form-control form-control-sm" id="qualification" placeholder="Master of Computer Application">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="technicalQualification" class="form-label">Technical Qualification</label>
+                                <input type="text" class="form-control form-control-sm" id="technicalQualification" placeholder="HTML, CSS, JAVASCRIPT, BOOTSTRAP, React.js">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="languageKnown" class="form-label">Language Known</label>
+                                <input type="text" class="form-control form-control-sm" id="languageKnown" placeholder="English, Hindi">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="totalExperience" class="form-label">Total Experience</label>
+                                <input type="text" class="form-control form-control-sm" id="totalExperience" placeholder="5 years">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                            <div class="mb-3">
+                                <label for="employerDetail" class="form-label">Employer Detail</label>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Designation</th>
+                                            <th>Period</th>
+                                            <th>Reason</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control form-control-sm" id="employerName[]" value="Maxtra Technologies"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="designation[]" value="UI UX Developer"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="period[]" value="16-Jan-2021 - 15-Jan-2023"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="reason[]" value="For growth"></td>
+                                        </tr>
+                                        <!-- Add more rows as needed -->
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Family Information Modal -->
+<div class="modal fade" id="familyInfoModal" tabindex="-1" aria-labelledby="familyInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="familyInfoModalLabel">Edit family</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <div class="row m-0 p-0">
+                            <div class="col-lg-12 col-sm-12 col-12">
+                                <div class="mb-3">
+                                    <table class="table table-bordered table-hover" id="familyTable">
+                                        <thead>
+                                            <tr>
+                                                <th>S. No.</th>
+                                                <th>Name</th>
+                                                <th>Year of Birth</th>
+                                                <th>Relation</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td><input type="text" class="form-control form-control-sm" id="familyName[]"></td>
+                                                <td><input type="date" class="form-control form-control-sm" id="familyDOB[]"></td>
+                                                <td><input type="text" class="form-control form-control-sm" id="familyRelation[]"></td>
+                                                <td><button type="button" class="btn btn-danger remove-row">Remove</button></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <button type="button" class="btn btn-primary" id="addRow">Add Family Member</button>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="curretlyFamily" class="form-label">Do You Have Any Relation Currently Working in This Company Unit?</label>
+                                    <p>
+                                        <label><input type="radio" id="relationWorking" value="Yes"> Yes</label>
+                                        <label><input type="radio" id="relationWorking" value="No"> No</label>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="relationName" class="form-label">Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="relationName">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="relationType" class="form-label">Relationship</label>
+                                    <input type="text" class="form-control form-control-sm" id="relationType">
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 col-12">
+                                <p>Name and Address of Two Responsible Persons</p>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="firstPersonName" class="form-label">Name of First Person</label>
+                                    <input type="text" class="form-control form-control-sm" id="firstPersonName">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="secondPersonName" class="form-label">Name of Second Person</label>
+                                    <input type="text" class="form-control form-control-sm" id="secondPersonName">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="religion" class="form-label">Address of First Person</label>
+                                    <input type="text" class="form-control form-control-sm" id="firstPersonAddress">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-6 col-12">
+                                <div class="mb-3">
+                                    <label for="caste" class="form-label">Address of Second Person</label>
+                                    <input type="text" class="form-control form-control-sm" id="secondPersonAddress">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- payroll Information Modal -->
+<div class="modal fade" id="payrollInfoModal" tabindex="-1" aria-labelledby="payrollInfoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="payrollInfoModalLabel">Edit payroll</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-0">
+                        <div class="col-lg-6 col-12">
+                            <div class="mb-3">
+                                <label for="transportFacility" class="form-label">Transport Facility</label>
+                                <input type="text" class="form-control form-control-sm" id="transportFacility" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <div class="mb-3">
+                                <label for="routeNo" class="form-label">Route No.</label>
+                                <input type="text" class="form-control form-control-sm" id="routeNo" placeholder="#5">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                            <div class="mb-3">
+                                <label for="salaryDetails" class="form-label">Salary Details</label>
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Basic</th>
+                                            <th>HRA</th>
+                                            <th>CONV</th>
+                                            <th>OTHER</th>
+                                            <th>EARN.5</th>
+                                            <th>WCONV</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><input type="text" class="form-control form-control-sm" id="basicSalary" value="50000"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="hra" value="20000"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="conv" value="5000"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="other" value="8000"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="earn5" value="2000"></td>
+                                            <td><input type="text" class="form-control form-control-sm" id="wconv" value="1000"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="employeeType" class="form-label">Employee Type</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="employeeType">
+                                    <option selected>Select Employee Type</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="wagesCalculation" class="form-label">Wages Calculation</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="wagesCalculation">
+                                    <option selected>Select Wages Calculation</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="paymentType" class="form-label">Payment Type</label>
+                                <select class="form-select form-select-sm form-control form-control-sm" id="paymentType">
+                                    <option selected>Select Payment Type</option>
+                                    <!-- Add options here -->
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-2 col-sm-2 col-3">
+                            <div class="mb-3">
+                                <label for="overtime" class="form-label">Overtime</label>
+                                <input type="text" class="form-control form-control-sm" id="overtime" placeholder="Enable">
+                            </div>
+                        </div>
+                        <div class="col-lg-1 col-sm-2 col-3">
+                            <div class="mb-3">
+                                <label for="rate" class="form-label">Rate</label>
+                                <input type="text" class="form-control form-control-sm" id="rate" placeholder="500">
+                            </div>
+                        </div>
+                        <div class="col-lg-12 col-12">
+                            <div class="mb-3">
+                                <label for="remark" class="form-label">Remark</label>
+                                <textarea class="form-control form-control-sm" id="remark" placeholder="Well we can see the remark here, which is given by the admin department"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- statutory Modal -->
+<div class="modal fade" id="statutoryModal" tabindex="-1" aria-labelledby="statutoryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="statutoryModalLabel">Edit statutory</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-0">
+                        <!-- ESI Information -->
+                        <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                            <div class="mb-3">
+                                <label for="form1ESI" class="form-label">Form 1 ESI</label>
+                                <input type="text" class="form-control form-control-sm" id="form1ESI" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="esiInsuranceNo" class="form-label">ESI Insurance No.</label>
+                                <input type="text" class="form-control form-control-sm" id="esiInsuranceNo" placeholder="314353647">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="esiEmployerCode" class="form-label">ESI Employer Code</label>
+                                <input type="text" class="form-control form-control-sm" id="esiEmployerCode" placeholder="2132435465">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="localOffice" class="form-label">Local Office</label>
+                                <input type="text" class="form-control form-control-sm" id="localOffice" placeholder="Plot #2, Site 4, Greater Noida, 201310">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="esiNomineePayment" class="form-label">ESI Nominee for Payment</label>
+                                <input type="text" class="form-control form-control-sm" id="esiNomineePayment" placeholder="20000">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="familyParticular" class="form-label">Particular of Family</label>
+                                <input type="text" class="form-control form-control-sm" id="familyParticular" placeholder="Mother">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="familyMemberResiding" class="form-label">Family Member Residing with Insured Person</label>
+                                <input type="text" class="form-control form-control-sm" id="familyMemberResiding" placeholder="fsdfsdf dsdffd">
+                            </div>
+                        </div>
+
+                        <!-- PF Information -->
+                        <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                            <div class="mb-3">
+                                <label for="form2PF" class="form-label">Form 2 PF</label>
+                                <input type="text" class="form-control form-control-sm" id="form2PF" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="pfAccountNo" class="form-label">PF Account No.</label>
+                                <input type="text" class="form-control form-control-sm" id="pfAccountNo" placeholder="314353647">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="pfNominee" class="form-label">Nominee/Nominees</label>
+                                <input type="text" class="form-control form-control-sm" id="pfNominee" placeholder="asd,safsd">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="nomineeSharePercentage" class="form-label">Share Percentage (%) of Nominee</label>
+                                <input type="text" class="form-control form-control-sm" id="nomineeSharePercentage" placeholder="50">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="childrenPension" class="form-label">Children Pension</label>
+                                <input type="text" class="form-control form-control-sm" id="childrenPension" placeholder="2132435465">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="widowPension" class="form-label">Widow Pension</label>
+                                <input type="text" class="form-control form-control-sm" id="widowPension" placeholder="314353647">
+                            </div>
+                        </div>
+
+                        <!-- Gratuity Information -->
+                        <div class="col-lg-12 col-12 border border-top-0 border-left-0 border-right-0 border-bottom mb-2">
+                            <div class="mb-3">
+                                <label for="formFGratuity" class="form-label">Form F Gratuity</label>
+                                <input type="text" class="form-control form-control-sm" id="formFGratuity" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="gratuityNominee" class="form-label">Nominee's for Gratuity</label>
+                                <input type="text" class="form-control form-control-sm" id="gratuityNominee" placeholder="2">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="gratuitySharePercentage" class="form-label">Share Percentage (%) of Nominee</label>
+                                <input type="text" class="form-control form-control-sm" id="gratuitySharePercentage" placeholder="100">
+                            </div>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- interview Modal -->
+<div class="modal fade" id="interviewModal" tabindex="-1" aria-labelledby="interviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="interviewModalLabel">Edit interview</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="row m-0 p-0">
+                        <!-- Interview Details -->
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="interviewDate" class="form-label">Interview Date</label>
+                                <input type="text" class="form-control form-control-sm" id="interviewDate" placeholder="12-Aug-2023">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="interviewBy" class="form-label">Interview By</label>
+                                <input type="text" class="form-control form-control-sm" id="interviewBy" placeholder="Mr. Name">
+                            </div>
+                        </div>
+
+                        <!-- Employment Details -->
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="dateOfJoining" class="form-label">Date of Joining</label>
+                                <input type="text" class="form-control form-control-sm" id="dateOfJoining" placeholder="27-Sept-2024">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="salary" class="form-label">Salary</label>
+                                <input type="text" class="form-control form-control-sm" id="salary" placeholder="125000">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="confirmDate" class="form-label">Confirm Date</label>
+                                <input type="text" class="form-control form-control-sm" id="confirmDate" placeholder="16-Aug-2024">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="individualBioData" class="form-label">Individual Bio-Data</label>
+                                <input type="text" class="form-control form-control-sm" id="individualBioData" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="mb-3">
+                                <label for="photo" class="form-label">Photo</label>
+                                <input type="text" class="form-control form-control-sm" id="photo" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-12">
+                            <div class="mb-3">
+                                <label for="noOfPhoto" class="form-label">No. of Photos</label>
+                                <input type="text" class="form-control form-control-sm" id="noOfPhoto" placeholder="5">
+                            </div>
+                        </div>
+
+                        <!-- Documents and Proofs -->
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="employmentApplication" class="form-label">Application for Employment</label>
+                                <input type="text" class="form-control form-control-sm" id="employmentApplication" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="proofOfAge" class="form-label">Proof of Age</label>
+                                <input type="text" class="form-control form-control-sm" id="proofOfAge" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="proofName" class="form-label">Proof Name</label>
+                                <input type="text" class="form-control form-control-sm" id="proofName" placeholder="afef arafa rff af afaf">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="certificatesTestimonials" class="form-label">Certificates/Testimonials</label>
+                                <input type="text" class="form-control form-control-sm" id="certificatesTestimonials" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="contractOfEmployment" class="form-label">Contract of Employment</label>
+                                <input type="text" class="form-control form-control-sm" id="contractOfEmployment" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="joiningReport" class="form-label">Joining Report</label>
+                                <input type="text" class="form-control form-control-sm" id="joiningReport" placeholder="Yes">
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-sm-6 col-12">
+                            <div class="mb-3">
+                                <label for="nominationForm" class="form-label">Nomination Form</label>
+                                <input type="text" class="form-control form-control-sm" id="nominationForm" placeholder="Yes">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
