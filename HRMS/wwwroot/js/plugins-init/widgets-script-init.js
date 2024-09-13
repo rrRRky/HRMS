@@ -1222,61 +1222,61 @@ if(jQuery('#chart_widget_17').length > 0 ){
 	
 }
 /* Widget */
-if(jQuery('#widget_sparklinedash').length > 0 ){	 
-	 $("#widget_sparklinedash").sparkline([10, 15, 26, 27, 28, 31, 34, 40, 41, 44, 49, 64, 68, 69, 72], {
-		type: "bar",
-		height: "40",
-		width: "40",
-		barWidth: "3",
-		resize: !0,
-		barSpacing: "3",
-		barColor: "rgb(0, 171, 197)"
-	});
-}
-if(jQuery('#widget_spark-bar').length > 0 ){	
-    $("#widget_spark-bar").sparkline([33, 22, 68, 54, 8, 30, 74, 7, 36, 5, 41, 19, 43, 29, 38], {
-        type: "bar",
-        height: "40",
-        barWidth: 3,
-        barSpacing: 3,
-        barColor: "rgb(7, 135, 234)"
-    });
-}	
-if(jQuery('#widget_StackedBarChart').length > 0 ){	
-    $('#widget_StackedBarChart').sparkline([
-        [1, 4, 2],
-        [2, 3, 2],
-        [3, 2, 2],
-        [4, 1, 2]
-    ], {
-            type: "bar",
-            height: "40",
-            barWidth: 3,
-            barSpacing: 3, 
-            stackedBarColor: ['#36b9d8', '#4bffa2', 'rgba(68, 0, 235, .8)']
-        });
-}
+//if(jQuery('#widget_sparklinedash').length > 0 ){	 
+//	 $("#widget_sparklinedash").sparkline([10, 15, 26, 27, 28, 31, 34, 40, 41, 44, 49, 64, 68, 69, 72], {
+//		type: "bar",
+//		height: "40",
+//		width: "40",
+//		barWidth: "3",
+//		resize: !0,
+//		barSpacing: "3",
+//		barColor: "rgb(0, 171, 197)"
+//	});
+//}
+//if(jQuery('#widget_spark-bar').length > 0 ){	
+//    $("#widget_spark-bar").sparkline([33, 22, 68, 54, 8, 30, 74, 7, 36, 5, 41, 19, 43, 29, 38], {
+//        type: "bar",
+//        height: "40",
+//        barWidth: 3,
+//        barSpacing: 3,
+//        barColor: "rgb(7, 135, 234)"
+//    });
+//}	
+//if(jQuery('#widget_StackedBarChart').length > 0 ){	
+//    $('#widget_StackedBarChart').sparkline([
+//        [1, 4, 2],
+//        [2, 3, 2],
+//        [3, 2, 2],
+//        [4, 1, 2]
+//    ], {
+//            type: "bar",
+//            height: "40",
+//            barWidth: 3,
+//            barSpacing: 3, 
+//            stackedBarColor: ['#36b9d8', '#4bffa2', 'rgba(68, 0, 235, .8)']
+//        });
+//}
 })(jQuery);
-if(jQuery('#widget_tristate').length > 0 ){	
+//if(jQuery('#widget_tristate').length > 0 ){	
 
-    $("#widget_tristate").sparkline([1, 1, 0, 1, -1, -1, 1, -1, 0, 0, 1, 1], {
-        type: 'tristate',
-        height: "40",
-        barWidth: 3,
-        barSpacing: 3, 
-        colorMap: ['#36b9d8', '#4bffa2', 'rgba(68, 0, 235, .8)'], 
-        negBarColor: 'rgba(245, 60, 121, .8)'
-    });
-}
-    // Composite
-if(jQuery('#widget_composite-bar').length > 0 ){
-    $("#widget_composite-bar").sparkline([73, 53, 50, 67, 3, 56, 19, 59, 37, 32, 40, 26, 71, 19, 4, 53, 55, 31, 37, 67, 10, 21], {
-        type: "bar",
-        height: "40",
-        barWidth: "3",
-        resize: !0,
-        // barSpacing: "7",
-        barColor: "rgb(68, 11, 89)", 
-        width: '100%'
-    });
-}	
+//    $("#widget_tristate").sparkline([1, 1, 0, 1, -1, -1, 1, -1, 0, 0, 1, 1], {
+//        type: 'tristate',
+//        height: "40",
+//        barWidth: 3,
+//        barSpacing: 3, 
+//        colorMap: ['#36b9d8', '#4bffa2', 'rgba(68, 0, 235, .8)'], 
+//        negBarColor: 'rgba(245, 60, 121, .8)'
+//    });
+//}
+//    // Composite
+//if(jQuery('#widget_composite-bar').length > 0 ){
+//    $("#widget_composite-bar").sparkline([73, 53, 50, 67, 3, 56, 19, 59, 37, 32, 40, 26, 71, 19, 4, 53, 55, 31, 37, 67, 10, 21], {
+//        type: "bar",
+//        height: "40",
+//        barWidth: "3",
+//        resize: !0,
+//        // barSpacing: "7",
+//        barColor: "rgb(68, 11, 89)", 
+//        width: '100%'
+//    });
+//}	
