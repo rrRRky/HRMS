@@ -118,8 +118,8 @@
                     "menuid": "1",
                     "menuname": "Dashboard",
                     "menuicon": "la la-home",
-                    "menucontroller": "EmployeeController",
-                    "menulink": "index.html",
+                    "menucontroller": "Employee",
+                    "menulink": "index",
                     "isactive": true,
                     "isvisible": true,
                     "menuchild": []
@@ -245,7 +245,59 @@
                             "menuchild": []
                         }
                     ]
-                }
+                },
+                {
+                    "menuid": "4",
+                    "menuname": "Report",
+                    "menuicon": "la la-home",
+                    "menucontroller": "Report",
+                    "menulink": "ESIForm",
+                    "isactive": true,
+                    "isvisible": true,
+                    "menuchild": [
+                        {
+                            "menuid": "4-5",
+                            "menuname": "Designation",
+                            "menuicon": "",
+                            "menucontroller": "Master",
+                            "menulink": "Designation",
+                            "isactive": false,
+                            "isvisible": true,
+                            "menuchild": []
+                        },
+                        {
+                            "menuid": "4-6",
+                            "menuname": "Location",
+                            "menuicon": "",
+                            "menucontroller": "Master",
+                            "menulink": "Location",
+                            "isactive": false,
+                            "isvisible": true,
+                            "menuchild": [
+                                {
+                                    "menuid": "5-5",
+                                    "menuname": "Designation",
+                                    "menuicon": "",
+                                    "menucontroller": "Master",
+                                    "menulink": "Designation",
+                                    "isactive": false,
+                                    "isvisible": true,
+                                    "menuchild": []
+                                },
+                                {
+                                    "menuid": "5-6",
+                                    "menuname": "Location",
+                                    "menuicon": "",
+                                    "menucontroller": "Master",
+                                    "menulink": "Location",
+                                    "isactive": false,
+                                    "isvisible": true,
+                                    "menuchild": []
+                                }
+                            ]
+                        }
+                    ]
+                },
                 // Add more menu items as per your requirements
             ]
         };

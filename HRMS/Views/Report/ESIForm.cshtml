@@ -1,0 +1,495 @@
+﻿@{
+    ViewData["Title"] = "ESI Form";
+}
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+    }
+
+    /* Input with dotted underline */
+    .dotted-input {
+        border: none;
+        border-bottom: 1px dotted black;
+        outline: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .read-only-input {
+        background-color: transparent;
+    }
+
+    /* General table layout */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 20px;
+    }
+
+    td, th {
+        padding: 5px;
+        vertical-align: top;
+    }
+
+    .main-body {
+        padding: 15px;
+    }
+
+    input {
+        border: 0px;
+        border-bottom: 1px dotted #333;
+        background-color: transparent;
+    }
+</style>
+<div class="row m-0 p-0">
+    <div class="col-lg-12 col-xl-12 col-sm-12 col-12">
+        <div class="profile-tab">
+            <div class="custom-tab-1">
+                <ul class="nav nav-tabs" id="dynamic-tabs">
+                    <li class="nav-item">
+                        <a href="#tab-1" data-toggle="tab" class="nav-link active">Front Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab-2" data-toggle="tab" class="nav-link ">Back Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#tab-3" data-toggle="tab" class="nav-link ">Back Page</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="dynamic-tab-content">
+                    <div id="tab-1" class="tab-pane fade active show">
+
+                        <div class="main-body" style="max-width:1000px; width:100%; margin:0 auto; border:1px solid #333;" id="printableArea">
+                            <table style="max-width:950px;   width:100%; margin:20px auto;">
+                                <thead>
+                                     <tr style="margin-top:10px;">
+                                        <th style="margin-bottom:10px;text-align:center;font-weight:600; font-size:20px;">EMPLOYEES STATE INSURANCE CORPORATION</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                     <tr style="margin-top:10px;">
+                                        <td>
+                                            <div style="position:relative; text-align:center;">
+                                                <span style="position:absolute; left:20px;"><input style="border:0px;" type="text" class="" value="10001"></span>
+                                                <span style="font-weight:600; font-size:16px;">PHOTO IDENTITY CARD FORM</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="max-width:950px;   width:100%; margin:20px auto;">
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Insurance No.</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="2"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"><label>Employer's Code No.</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="2"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Name (in block capital)</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="5"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="ANAND PANDEY" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Father's/Husband's Name</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="5"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Permanent Address</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="5"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="," readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Local Office</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"><label>Sex</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="MALE" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"><label>Dispensary</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell" colspan="4"><label>Marital Status (State whether Bechelor, Spinster, Married, Widow, Widowear)</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="2"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="Unmarried" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Age</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="29" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"><label>Date of Birth</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="10-10-1987" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell" colspan="6" style="font-weight:600;margin:10px 0px;"><label>Particulars of Employement:</label></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Date of Appointment</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="3"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="15-05-2017" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Whether Employed Directly</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="YES" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"><label>Through Contractor</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="NO" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Department</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="3"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="DIRECTORS & BUSINESS HEAD" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Nature of Work</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="3"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="DIRECTOR" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Name of the Nominee</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="3"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell" colspan="6" style="font-weight:600;margin:10px 0px;"><label>Particulars of Family:</label></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <th class="label-cell" style="border:1px solid #333; padding:8px;">S. No.</th>
+                                    <th class="label-cell" style="border:1px solid #333; padding:8px;" colspan="2">Name</th>
+                                    <th class="label-cell" style="border:1px solid #333; padding:8px;">Date of Birth</th>
+                                    <th class="label-cell" style="border:1px solid #333; padding:8px;">Relationship with Insured Person</th>
+                                    <th class="label-cell" style="border:1px solid #333; padding:8px;">Whether Residing with Him/Her or Not</th>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="border:1px solid #333; padding:8px;">1</td>
+                                    <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="border:1px solid #333; padding:8px;">2</td>
+                                    <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="border:1px solid #333; padding:8px;">3</td>
+                                    <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="border:1px solid #333; padding:8px;">4</td>
+                                    <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="border:1px solid #333; padding:8px;">5</td>
+                                    <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="border:1px solid #333; padding:8px;">6</td>
+                                    <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                    <td style="border:1px solid #333; padding:8px;"></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell" colspan="2"><label>Signature/Thumb Impression of Insured Person</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="3"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell" colspan="2"><label>Counter Signature of Employer</label></td>
+                                    <td style="margin-top:10px;" class="input-cell" colspan="3"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" readonly></td>
+                                </tr>
+                                 <tr style="margin-top:10px;">
+                                    <td style="margin-top:10px;" class="label-cell"><label>Date</label></td>
+                                    <td style="margin-top:10px;" class="input-cell"><input style="border:0px; border-bottom:1px dotted #333;width:100%;"type="text" class="dotted-input read-only-input" value="15-05-2017" readonly></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                    <td style="margin-top:10px;" class="label-cell"></td>
+                                    <td style="margin-top:10px;" class="input-cell"></td>
+                                </tr>
+                            </table>
+
+                            <!-- Print Button -->
+                            <div style="text-align:center;">
+                                <button style="padding:10px 20px; background-color:darkgray; border:1px solid #ccc;" type="button" class="btn-print" onclick="printDiv('printableArea')">Print</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade">
+                        <div id="printableAreaBack" class="main-body" style="max-width:1000px; width:100%; margin:0 auto; border:1px solid #333;">
+                            <table style="max-width:950px;   width:100%; margin:20px auto;">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:left;">Particular of Family: -</th>
+                                        <th style="text-align:right;"><input style="border:0px;" type="text" class="" value="10001"></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table style="max-width:950px;   width:100%; margin:20px auto;">
+                                <thead>
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th colspan="2" style="text-align:center;">Name</th>
+                                        <th style="text-align:center;">Date of Birth</th>
+                                        <th style="text-align:center;">Relationship with Insured Person</th>
+                                        <th style="text-align:center;">Whether residing with him/ or not</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">1</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">2</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">3</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">4</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">5</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">6</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>NOTE: </td>
+                                        <td colspan="5">
+                                            According to section 2, clause[ii] of the Employee's State Insurance Act. 1948, Family means all or any the following
+                                            relatives of an insured person, namle,(i) a spouse (ii) a minor legimate or adopted child department upon the IP (iii) a child who is
+                                            sholy department on the earning of the IP and who is -(a) receiving education, till he or she attains the age of 21 years, (b) an
+                                            unmarried daughter,(iv) a child who is inform bt reason of any physical or mental abnormality or injury an os wholly dependant on
+                                            the earning of the IP, so long as the infirmily continues (v) dependant part I affirm tht I have not been previously i sured under
+                                            this Act and no Identicity Card has been issued to me, I hereby declare the above particular has been given by me and are correct
+                                            to the best of my knowledge and belief, I also undertake to intiatmate to the Corporation any chnage in the membership of family
+                                            within 15 days of such changed having occured.
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-cell"><label>Place:</label></td>
+                                        <td class="input-cell"><input type="text" class="dotted-input read-only-input" value="Noida , (U.P.)" readonly></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="label-cell" style="text-align:center; font-weight:600; font-size:16px;"><label>Signature or thumb impression <br /> of the employee</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-cell" colspan="2"><label>Date of signing of the employer:</label></td>
+                                        <td class="input-cell"><input type="text" class="dotted-input read-only-input" value="15-05-2017" readonly></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td class="label-cell" colspan="2" style="text-align: right; font-weight: 600; font-size: 16px;"><label>Date of signing of the employer</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-cell" colspan="2"><label>Name and Address of Employer</label></td>
+                                        <td class="input-cell" colspan="2"><input type="text" class="dotted-input read-only-input" value="" readonly></td>
+                                        <td class="label-cell" style="text-align:right;"><label>Designation</label></td>
+                                        <td class="input-cell" style="text-align:right;"><input type="text" class="dotted-input read-only-input" value="" readonly></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-cell" colspan="6"><span style="display: block; margin-top: 10px; width: 100%; border: 2px solid #333; "></span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="label-cell" colspan="6" style="text-align: center; font-weight: 600; font-size: 16px;">
+                                            <div style="margin: 0px; margin-top:20px; position: relative;">
+                                                <span>CUT HERE</span>
+                                                <span style="display: block; width: 100%; margin-top: -13px; position: relative; border:1px dotted #333;"></span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table style="max-width:950px;   width:100%; margin:20px auto;">
+                                <thead>
+                                    <tr>
+                                        <th>S.No.</th>
+                                        <th colspan="2" style="text-align:center;">Name</th>
+                                        <th style="text-align:center;">Date of Birth</th>
+                                        <th style="text-align:center;">Relationship with Insured Person</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">1</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">2</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">3</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">4</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">5</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="border:1px solid #333; padding:8px;">6</td>
+                                        <td style="border:1px solid #333; padding:8px;" colspan="2"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                        <td style="border:1px solid #333; padding:8px;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- Print Button -->
+                            <div style="text-align:center;">
+                                <button style="padding:10px 20px; background-color:darkgray; border:1px solid #ccc;" type="button" class="btn-print" onclick="printDiv('printableAreaBack')">Print</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade">
+                        <div class="main-body" id="printableAreaESI" style="max-width:1000px; width:100%; margin:0 auto; border:1px solid #333;">
+                            <table>
+                                <thead>
+                                    <tr style="text-align: center;">
+                                        <th style="font-size: 14px;">Serial No. in Return of <br /> Declartion Form No. 3</th>
+                                        <th style=" font-size: 40px; font-weight: 800; line-height: 40px; color: #333;">FORM - 1</th>
+                                        <th style="display: flex; border: 2px solid #333; width: 150px; height: 150px; border-radius: 10px; justify-content: flex-start; align-items: center; padding: 42px; text-align: left;" rowspan="5">RECENT PASSPORT SIZE PHOTO</th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""></th>
+                                        <th style="font-size: 25px; padding: 0px;">Employee's State Insurance Corporation'</th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""><input type="text" value="10001" class="" /></th>
+                                        <th style="font-size: 25px; text-align: center; padding: 0px; line-height: 20px;">Declartion Form</th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th></th>
+                                        <th style="font-size: 14px; text-align: center; padding: 0px; font-style: italic;">(Regulation 11 & 12)</th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th></th>
+                                        <th style="font-size: 12px; text-align: center; padding: 0px; font-weight: 800;">(To be filled in Only if the Employee's has not been insured earlier)</th>
+                                    </tr>
+                                </thead>
+                            </table>
+                            <table>
+                                <thead>
+                                    <tr style="text-align: center;">
+                                        <th style="">Insurance No.</th>
+                                        <th style="">Sex</th>
+                                        <th style="">Martial Status</th>
+                                        <th style="">Employer's Code No.</th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""><span style="">1</span><input class="" type="text" style="" /></th>
+                                        <th style=""><span style="">1</span><input class="" type="text" style="" /></th>
+                                        <th style=""><span style="">1</span><input class="" type="text" style="" /></th>
+                                        <th style=""><span style="">1</span><input class="" type="text" style="" /></th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style="">(State whether bachelor/ Spinster/Married/Window or Widower)</th>
+                                        <th style=""></th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                    </tr>
+                                    <tr style="text-align: center;">
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                        <th style=""></th>
+                                    </tr>
+                                </thead>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function printDiv(divId) {
+        console.log('divId', divId, `${divId}`);
+        var printContents = document.getElementById(divId).innerHTML;
+        var originalContents = document.body.innerHTML;
+        console.log('originalContents', originalContents);
+        document.body.innerHTML = printContents;
+        console.log('printContents', printContents, "||||", document.body.innerHTML);
+        window.print();
+
+        document.body.innerHTML = originalContents;
+    }
+</script>

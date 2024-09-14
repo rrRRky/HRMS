@@ -150,3 +150,28 @@ table.dataTable.no-footer {
 .myrow .button-group button {
     margin-right:10px;
 }
+
+
+
+
+
+
+
+/* Print styling */
+@media print {
+    .btn-print {
+        display: none;
+    }
+
+    .label-cell {
+        font-size: 10px;
+    }
+
+    .main-body {
+        padding: 5px;
+    }
+
+    input {
+        border: 0px;
+    }
+}

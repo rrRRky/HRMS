@@ -12825,6 +12825,7 @@ svg.pulse-svg .third-circle {
 	background: #fff !important;
 	min-width: 300px;
 	min-height: 33px;
+	height:36px;
 	border-color: transparent;
 	color: #454545 !important;
 	border-top-right-radius: 5rem;
